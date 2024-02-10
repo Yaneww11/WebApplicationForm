@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+body  {
+    background-image: url("/images/red-yellow-backgroundwebp.webp");
+    background-color: #cccccc;
+    background-size: cover;
+    margin: 0;
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/*Style header*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em 1em;
+    background-color: whitesmoke;
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+header h1{
+    margin-left: 1em;
+    margin-top: 1em;
+    color: darkred;
+}
+
+.club_icon{
+    max-width: 6em;
+}
+
+
+nav{
+    display: flex;
+    margin-left: auto;
+    margin-top: 1.5em;
+    font-size: 18px;
+}
+nav a{
+    padding: 0.5em;
+    margin-right: 0.5em;
+    color: darkred;
+    text-decoration: none;
+}
+
+/*Style main*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+
+/* First-colum - unordered list menu*/
+
+.col-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-1 li {
+    padding: 8px;
+    margin-right: 0;
+    margin-bottom: 7px;
+    background-color: whitesmoke;
+    color: darkred;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 18px;
+}
+
+/*Calendar with matches*/
+
+summary{
+    padding-bottom: 3px;
+    color: darkred;
+    list-style: none;
+}
+
+table{
+
+    color: black;
+    display: inline-block;
+}
+
+td {
+    border: 1px solid darkred;
+    padding: 0.2em 0.35em;
+    font-size: x-large;
+}
+
+.days{
+    color: black;
+}
+
+
+
+#players{
+    color: darkred;
+    text-decoration: none;
+}
+
+#trophies_img{
+    margin-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+
+#trophies_img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+
+}
+
+/* Second colum - history of club*/
+
+#history{
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+#history h2{
+    color: darkred;
+}
+
+/* Third colum - personal information*/
+
+.aside {
+    padding: 2px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.aside h2{
+    color: darkred;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+/* Button effects*/
+
+#button_stadium{
+    border: none;
+    padding: 0;
+    color: darkred;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.button {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: darkred;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#button_back {
+    position: absolute;
+    left: 90%;
+    margin-bottom: 1%;
+    display: none;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+
+}
+
+/* Responsive design */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+
+}
+
+/* For tablets: */
+@media only screen and (min-width: 800px) {
+    .col-1, .col-2 {width: 50%;}
+    .col-3 {width: 100%;}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1400px) {
+    .col-1, .col-3 {width: 25%;}
+}
+
+
+

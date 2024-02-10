@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 Roboto, sans-serif;
+}
+
+.page{
+    width: 100%;
+}
+
+/*Form*/
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+    border: 2px solid rgba(0, 0, 0, 0.38);
+    box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.6);
+    background: #dedcdc;
+}
+
+form header{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #b0afaf;
+    margin-block: 1em;
+}
+
+form main{
+    display: flex;
+    flex-direction: column;
+    margin-block: 3px;
+}
+
+form footer{
+    display: flex;
+    margin-top: 1em;
+    padding-block: 0.5em;
+    border-top: 1px solid #b0afaf;
+}
+
+/*Header*/
+header h1{
+    font-weight: normal;
+}
+
+/*main*/
+form p{
+    margin-bottom: 0.5em;
+}
+
+form input{
+    border-radius: 0.3em;
+    padding: 5px;
+}
+
+/*Buttons and links in footer*/
+footer a,
+.button{
+    display: block;
+    padding: 0.8em;
+    width: 40%;
+    margin: 0.5em auto;
+    background: #c70303;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0.5em;
+    border: 1px solid white;
+}
+
+footer a:hover,
+.button:hover{
+    background: darkred;
+    border-color: #6c0404;
+}
+
+footer a{
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Login messages*/
+.errors{
+    margin-top: 1.3em;
+}
+.alert{
+    color: white;
+    padding: 0.6em;
+    border-radius: 0.4em;
+    border: 1px solid white;
+    font-style: italic;
+    margin-bottom: 0.2em;
+}
+
+.alert-danger{
+    background: #c70303;
+}
+
+.alert-success{
+    background: #54a900;
+    text-align: center;
+}
+
+.register_message{
+    margin-top: 0.5em;
+}
+
+.register_message a{
+    text-decoration: none;
+    color: #af0e0e;
+}
+
+.register_message a:hover{
+    text-decoration: underline;
+    color: darkred;
+}
+
+/*Responsive design*/
+@media only screen and (min-width: 500px) {
+
+    html{
+        font-size: 16px;
+    }
+
+    body {
+        background-color: #eee;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page{
+        max-width: 33em;
+    }
+
+}

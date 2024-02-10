@@ -1,0 +1,98 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Form*/
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0 2em 0;
+    border: 1px solid #888;
+    width: 60%;
+    flex-direction: column;
+    box-shadow: 0 0 6em 0 rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    max-width: 800px;
+}
+
+form header{
+    padding: 1em;
+    margin-bottom: 1em
+}
+
+form main{
+    display: flex;
+    flex-direction: column;
+    margin-block: 3px;
+    margin-inside: 1em;
+}
+
+label{
+    margin-block: 4px;
+}
+
+input{
+    border-radius: 0.3em;
+    padding: 5px;
+}
+
+form footer{
+    margin-block: 1em;
+    padding-block: 1em;
+}
+
+form .button{
+    display: block;
+    padding: 1em;
+    min-width: 10em;
+    margin: 0.5em auto;
+    background: #c70303;
+    color: white;
+    border-color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form .button:hover{
+    background: darkred;
+}
+
+/*Responsive design*/
+@media (max-width: 1000px) {
+
+    form{
+        font-size: 14px;
+    }
+
+}
