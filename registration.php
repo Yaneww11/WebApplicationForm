@@ -73,7 +73,7 @@ if (isset($_SESSION["user"])){
             </div>
 
             <header>
-                <p><i>Fill up the form with the correct values</i></p>
+                <p><i>All fields are required and fill up them with the correct values</i></p>
                 <h1>Registration Form</h1>
 
             </header>
@@ -92,7 +92,7 @@ if (isset($_SESSION["user"])){
                 <input type="text" name="phone_number" placeholder="088-777-6666" required>
 
                 <label for="password"><b>Password</b> </label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" required placeholder="Must be at least 8 characters long">
 
                 <div class="login_message"><p>Registered yet: <a href="login.php">Login Here</a></p></div>
             </main>
