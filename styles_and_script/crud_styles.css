@@ -54,6 +54,7 @@ main{
 }
 
 .box1 h2{
+    max-width: 700px;
     font-weight: normal;
     margin-left: 5px;
 }
@@ -137,6 +138,10 @@ footer{
     }
     table{
         justify-content: center;
+    }
+
+    .box1 h2{
+        max-width: 1000px;
     }
 
 }
