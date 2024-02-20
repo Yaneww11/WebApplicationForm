@@ -1,3 +1,5 @@
+@import "navigation.css";
+
 * {
     box-sizing: border-box;
 }
@@ -8,9 +10,9 @@ html {
 body  {
     background-image: url("/images/red-yellow-backgroundwebp.webp");
     background-color: #cccccc;
+    min-height: 100vh;
     background-size: cover;
     margin: 0;
-
 }
 
 img{
@@ -30,6 +32,7 @@ img{
 
 header {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0.5em 1em;
     background-color: whitesmoke;
@@ -55,10 +58,16 @@ header h1{
 
 nav{
     display: flex;
-    margin-left: auto;
-    margin-top: 1.5em;
+    align-items: center;
     font-size: 18px;
 }
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
 nav a{
     padding: 0.5em;
     margin-right: 0.5em;
@@ -229,8 +238,6 @@ footer{
 }
 
 #button_back {
-    position: absolute;
-    left: 90%;
     margin-bottom: 1%;
     display: none;
     padding: 15px 25px;
@@ -258,11 +265,22 @@ footer{
 @media only screen and (min-width: 800px) {
     .col-1, .col-2 {width: 50%;}
     .col-3 {width: 100%;}
+
+    #button_back{
+        position: absolute;
+        left: 90%;
+    }
 }
 
 /* For desktop: */
 @media only screen and (min-width: 1400px) {
     .col-1, .col-3 {width: 25%;}
+}
+
+@media only screen and (max-width: 470px) {
+    header h1 {
+        display: none;
+    }
 }
 
 
