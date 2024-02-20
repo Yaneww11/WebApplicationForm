@@ -149,6 +149,6 @@ function check_verified()
         <a href="https://tickets.manutd.com/en-GB/categories/home-tickets" target="_blank" class="button"><span>Get ticket </span></a>
     </footer>
 
-    <script src="styles_and_script/script.js"></script>
+    <script src="styles_and_script/index_script.js"></script>
 </body>
 </html>
