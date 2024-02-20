@@ -63,6 +63,7 @@ label{
 }
 
 input{
+    border: 2px solid #ccc;
     border-radius: 0.3em;
     padding: 5px;
 }
